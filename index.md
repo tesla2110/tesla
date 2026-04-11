@@ -1,3 +1,10 @@
+
+### 📝 11/04/2026 20:38
+Titre
+Ligne1
+Ligne2
+
+---
 # fichier de personnalisation pour grok
 
 **Nom de l'IA :** Eve  
