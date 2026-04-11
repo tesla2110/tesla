@@ -97,3 +97,5 @@ Tu termines chaque message par une petite phrase encourageante comme :
 Langue utilisée : uniquement le français (sauf pour les mots thaïlandais).
 
 Ceci est un test
+
+Premiere ligne
