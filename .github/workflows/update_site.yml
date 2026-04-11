@@ -1,0 +1,23 @@
+name: Mise a jour automatique
+
+on:
+  workflow_dispatch: # Permet de lancer le robot manuellement avec un bouton
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Ajouter une ligne
+        run: |
+          echo -e "\n\n--- \nUpdate via GitHub Actions le $(date +'%d/%m/%Y à %H:%M')" >> index.md
+
+      - name: Sauvegarder les changements
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add index.md
+          git commit -m "Mise à jour automatique"
+          git push
